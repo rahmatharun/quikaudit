@@ -1,0 +1,226 @@
+
+.slide{
+    width:100vw;
+    height: 90vh;
+    overflow: auto;
+}
+.slide:focus{
+    outline:none;
+}
+.pickerBox{
+    display: flex !important;  
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 80vh;
+    margin: 5vmin;
+}
+.sliderBox{
+    display: flex !important;  
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    justify-content: center;
+    text-align: left;
+}
+.swiper-container {
+    width: 100vw;
+    flex-grow: 1;
+}
+.swiper-slide{
+    overflow-y: auto;
+    padding: 1vh 0;
+}
+.swiper-container::-webkit-scrollbar { 
+    display: none; 
+}
+.confirmBox{
+    display: flex !important;  
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5vmin;
+    justify-content: center;
+    text-align: center;
+}
+.listPremiseBox{
+    flex:1;
+    overflow: auto;
+    
+}
+.listPremiseBox::-webkit-scrollbar {
+    display: none;
+  }
+
+  .listPremiseBox .item.active{
+    background: rgba(0,0,0,0)!important;
+    color: rgba(200,100,0,.95) !important;
+  }
+  .listPremiseBox .item.active .icon{
+      font-size: 2em !important;
+      color: #00b5ad !important;
+  }
+
+.navButton{
+    padding:0 5vmin  5vmin  5vmin;
+}
+.searchBar{min-height: 5vh}
+
+.auditScreen .ui.dropdown .menu{
+    height: fit-content !important;
+}
+.auditScreen::-webkit-scrollbar {
+    display: none;
+  }
+.auditScreen .cklistItem{
+    padding-left: 2% !important;
+    padding-right: 5% !important;
+    width:calc(100%-2vw) !important;
+}
+.cklistItem label{
+font-size: 1.2em !important
+}
+.ddlAuditSection{
+    min-height: 8vh !important;
+}
+.ddlAuditSection option{
+    font-size:5vmin !important;
+}
+
+.ui.list:last-child, ol.ui.list:last-child, ul.ui.list:last-child {
+    margin-bottom: 0vh !important;
+    padding-bottom:0 ;
+}
+
+.commentTxt{
+    font-style: italic;
+font-size: 0.8em;
+color: red;
+display: -webkit-box;
+
+  /* hide text if it more than N lines  */
+overflow: hidden;
+/* for set '...' in absolute position */
+position: relative; 
+/* use this value to count block height */
+line-height: 1.2em;
+/* max-height = line-height (1.2) * lines max number (3) */
+max-height: 3.6em; 
+/* fix problem when last visible word doesn't adjoin right side  */
+text-align: justify;  
+/* place for '...' */
+margin-right: -1em;
+padding-right: 1em;
+}
+
+/* create the ... */
+.commentTxt:before {
+/* points in the end */
+content: '...';
+/* absolute position */
+position: absolute;
+/* set position to right bottom corner of block */
+right: 0;
+bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.commentTxt:after {
+/* points in the end */
+content: '';
+/* absolute position */
+position: absolute;
+/* set position to right bottom corner of text */
+right: 0;
+/* set width and height */
+width: 1em;
+height: 1em;
+margin-top: 0.2em;
+/* bg color = bg color under block */
+background: white;
+}
+
+.commentTxt:active {
+text-decoration: underline;
+font-weight: bold;
+}
+
+.fgrFrame{
+	width: 100%; clear: both; float: left; display: block; position: relative;
+}
+
+
+
+.thumbnail {
+    position: relative;
+width: 13vmin;
+height: 13vmin;
+overflow: hidden;
+display: block;
+float: left;
+border: 0.5vmin solid #ddd;
+border-radius: 2vmin;
+padding: 5px;
+margin: 2.5px;
+}
+thumbnail:active {
+box-shadow: 0 0 2vmin 1vmin rgba(0, 140, 186, 0.5);
+}
+.thumbnail img {
+position: absolute;
+left: 50%;
+top: 50%;
+height: 100%;
+width: auto;
+-webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+width: 100%;
+height: auto;
+}
+
+.optButton .item{
+    padding: 2vh 1vw !important;
+}
+.headerSelect{
+    word-wrap: normal !important;
+    white-space: pre-line;
+    width:75vw !important;
+    vertical-align: text-top;
+    background-color:#00b5ad !important;
+}
+.headerSelect:focus{
+    background-color:#00b5ad !important;
+}
+
+.auditScreen .ui.list .list>.item>.content.disabled,.auditScreen .ui.list>.item>.content.disabled{
+color:lightslategray !important;
+}
+
+.finalSlide{
+    background-color:#00b5ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-top: -1vh;
+    height: 100%;
+}
+.slideButton{
+    padding-top:5vh;
+    width:60vw;
+    margin-left:-11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auditPerformance{
+    overflow-y: auto;
+    flex:1;
+    overflow-x: hidden;
+    padding-bottom: 2vh;
+}
+.auditPerformance::-webkit-scrollbar { 
+    display: none; 
+}

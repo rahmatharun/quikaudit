@@ -1,0 +1,7 @@
+# Dependency directories
+
+node_modules/
+QuikAudit/node_modules/
+QuikAudit/platforms/
+QuikAudit/plugins/
+keystore/

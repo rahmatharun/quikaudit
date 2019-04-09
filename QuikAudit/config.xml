@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="my.holisticslab.quikaudit" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>QuikAudit</name>
+    <description>
+        An interactive audit apps
+    </description>
+    <author email="rahmatharun@holisticslab.my" href="http://www.holisticslab.my">
+        QuikHalal Development Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="xhdpi" src="/res/android/icon/xhdpi.png" />
+        <icon density="xxhdpi" src="/res/android/icon/xxhdpi.png" />
+        <icon density="xxxhdpi" src="/res/android/icon/xxxhdpi.png" />
+        <icon density="ldpi" src="/res/android/icon/ldpi.png" />
+        <icon density="mdpi" src="/res/android/icon/mdpi.png" />
+        <icon density="hdpi" src="/res/android/icon/hdpi.png" />
+        <splash density="port-xhdpi" src="/res/android/screen/splash-port-xhdpi.9.png" />
+        <splash density="port-xxhdpi" src="/res/android/screen/splash-port-xxhdpi.9.png" />
+        <splash density="port-xxxhdpi" src="/res/android/screen/splash-port-xxxhdpi.9.png" />
+        <splash density="port-hdpi" src="/res/android/screen/splash-port-hdpi.9.png" />
+        <splash density="port-mdpi" src="/res/android/screen/splash-port-mdpi.9.png" />
+        <splash density="port-ldpi" src="/res/android/screen/splash-port-ldpi.9.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-device" spec="^2.0.2" />
+    <plugin name="cordova-plugin-file" spec="^6.0.1" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.4">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.1+" />
+    </plugin>
+    <engine name="ios" spec="~4.5.5" />
+</widget>
